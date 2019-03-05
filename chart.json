@@ -1,0 +1,25 @@
+{
+	"master": {
+		"tasks": {
+			"taskId": {
+				"frequency": "hourly | daily | weekly | monthly | yearly",
+				"assetid": "<string>"
+			}
+		},
+		"assets": {
+			"assetid": {
+				"workerid": "<string>"
+			}
+		},
+		"admins": {
+			"name": "password"
+		},
+		"workers": {
+			"wordkerid": {
+				"taskIDs": [],
+				"status": "true | false"
+
+			}
+		}
+	}
+}
