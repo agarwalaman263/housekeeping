@@ -3,10 +3,13 @@
 from flask import Flask, render_template, request, Response, jsonify
 import json
 import mysql.connector
+from flask.ext.cors import CORS, cross_origin
 
 # Variables
+
 app = Flask(__name__)
 app.config['DEBUG'] = True
+cors = CORS(app)
 
 # Views
 @app.route('/', methods=["GET"])

@@ -20,7 +20,7 @@ The REST API to the example app is described below.
 
 `POST /add_asset/`
 
-    curl -X POST https://udaantest.herokuapp.com/add_asset -H 'Content-Type: application/json' \ -H 'content-type: multipart/form-data -F assetID=<string>
+    curl -X POST https://udaantest.herokuapp.com/add_asset -H 'Content-Type: application/json'  -H 'content-type: multipart/form-data -F assetID=<string>
 
 ### Response
 
@@ -38,7 +38,7 @@ The REST API to the example app is described below.
 
 `POST /add_task/`
 
-    curl -X POST https://udaantest.herokuapp.com/add_task -H 'Content-Type: application/json' \ -H 'content-type: multipart/form-data -F taskID=<string> -F frequency=<string>
+    curl -X POST https://udaantest.herokuapp.com/add_task -H 'Content-Type: application/json'  -H 'content-type: multipart/form-data -F taskID=<string> -F frequency=<string>
 
 ### Response
 
@@ -57,7 +57,7 @@ The REST API to the example app is described below.
 
 `POST /add_worker/`
 
-    curl -X POST https://udaantest.herokuapp.com/add_worker -H 'Content-Type: application/json' \ -H 'content-type: multipart/form-data -F workerID=<string>
+    curl -X POST https://udaantest.herokuapp.com/add_worker -H 'Content-Type: application/json'  -H 'content-type: multipart/form-data -F workerID=<string>
 
 ### Response
 
