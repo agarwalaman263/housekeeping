@@ -10,7 +10,7 @@ app.config['DEBUG'] = True
 
 # Views
 @app.route('/', methods=["GET"])
-def add_asset():
+def home():
 	return "aman"
 @app.route('/add_asset', methods=["POST"])
 def add_asset():
