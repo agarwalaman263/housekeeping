@@ -9,6 +9,9 @@ app = Flask(__name__)
 app.config['DEBUG'] = True
 
 # Views
+@app.route('/', methods=["GET"])
+def add_asset():
+	return "aman"
 @app.route('/add_asset', methods=["POST"])
 def add_asset():
 	try:
