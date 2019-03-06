@@ -127,8 +127,6 @@ The REST API to the example app is described below.
 
 _*All tiemstamps must be provided in the given format **%Y-%m-%d %H:%M:%S**.*_
 
-_*The information about the frequency was inadequate. This means I could only allot a worker to the a task but cannot check when the worker is free or not.*_
-
 _*I have used formdata to pass data to the API. So to evaluate the work, please use POST. It has a special input type where we an pass the parameters via formdata*_
 
 _*Database used is mySQL. The mySQL server is provided by remotemysql.com*_
