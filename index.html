@@ -96,26 +96,27 @@
     <script>
     $('#add_asset').submit(function(event) {
         event.preventDefault();
-        var form = new FormData($('form')[0]); // Create an arbitrary FormData instance
+       	var form = new FormData();
+form.append("assetID", "xjcbjcb");
 
-        var settings = {
-            "async": true,
-            "crossDomain": true,
-            "url": "https://udaantest.herokuapp.com/add_asset",
-            "method": "POST",
-            "headers": {
-                "Content-Type": "application/json",
-                "cache-control": "no-cache"
-            },
-            "processData": false,
-            "contentType": false,
-            "mimeType": "multipart/form-data",
-            "data": form
-        }
+var settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "https://udaantest.herokuapp.com/add_asset",
+  "method": "POST",
+  "headers": {
+    "Content-Type": "application/json",
+    "cache-control": "no-cache"
+  },
+  "processData": false,
+  "contentType": false,
+  "mimeType": "multipart/form-data",
+  "data": form
+}
 
-        $.ajax(settings).done(function(response) {
-            alert(response)
-        });
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
     });
     </script>
 </body>
